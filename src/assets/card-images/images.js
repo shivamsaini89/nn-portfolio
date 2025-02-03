@@ -1,0 +1,16 @@
+import p1 from '../card-images/p1.png'
+import p2 from '../card-images/p2.png'
+import p3 from '../card-images/p3.png'
+import p4 from '../card-images/p4.png'
+import p5 from '../card-images/p5.png'
+import p6 from '../card-images/p6.png'
+import p7 from '../card-images/p7.png'
+import p8 from '../card-images/p8.png'
+import p9 from '../card-images/p9.png'
+import p10 from '../card-images/p10.png'
+import p11 from '../card-images/p11.png'
+import p12 from '../card-images/p12.png'
+import p13 from '../card-images/p13.png'
+import p14 from '../card-images/p14.png'
+
+export {p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14}
