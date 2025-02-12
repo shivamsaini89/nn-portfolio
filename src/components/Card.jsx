@@ -2,8 +2,14 @@ import PropTypes from "prop-types";
 
 export default function Card(props) {
   return (
-    <div className="relative w-full max-w-8xl h-full rounded-2xl overflow-hidden">
-      <img className="h-full w-full" src={props.image} alt="image" />
+    <div className="relative  max-w-8xl h-full rounded-2xl overflow-hidden transition duration-300 hover:scale-105 z-10 hover:cursor-pointer">
+      <img
+        className="h-full w-full transition duration-300 "
+        src={props.image1}
+        onMouseEnter={(e) => (e.currentTarget.src = props.image2)}
+        onMouseLeave={(e) => (e.currentTarget.src = props.image1)}
+        alt="image"
+      />
       <p className="absolute bottom-4 left-4 text-white text-lg">
         {props.name}
       </p>
@@ -20,7 +26,8 @@ export default function Card(props) {
 }
 
 Card.propTypes = {
-  image: PropTypes.string,
+  image1: PropTypes.string,
+  image2: PropTypes.string,
   name: PropTypes.string,
   tag: PropTypes.string,
   type: PropTypes.string,

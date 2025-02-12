@@ -6,7 +6,7 @@ function Cta() {
 
   return (
     <>
-      <div className=" flex flex-col items-center justify-center bg-gradient-to-r from-[#0e0f0f] via-[#0a1731] to-[#220e0d] h-screen py-16 text-center">
+      <div className=" flex flex-col items-center justify-center bg-gradient-to-r from-[#0e0f0f] via-[#0a1731] to-[#220e0d] h-screen py-16 text-center ">
         <div className="absolute inset-0">
           <div className="absolute top-30 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-blue-500 opacity-10 blur-3xl rounded-full"></div>
         </div>
@@ -14,7 +14,7 @@ function Cta() {
           Want to Create a Unique Product <br /> Tailored to Your Needs?
         </h2>
         <button
-          className="transition duration-200 bg-blue-500 hover:bg-white text-white hover:text-black text-2xl px-6 py-3 rounded-lg shadow-lg"
+          className="transition duration-200 bg-blue-500 hover:bg-white text-white hover:text-black text-2xl px-6 py-3 rounded-lg shadow-lg z-1 hover:cursor-pointer"
           onClick={() => setIsModalOpen(true)}
         >
           Start building your product →
@@ -23,10 +23,10 @@ function Cta() {
       <div className="w-full h-[1px] bg-gray-500"></div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-transparent bg-opacity-50">
+        <div className="fixed inset-0 flex items-center justify-center bg-transparent bg-opacity-50 z-10">
           <div className="relative">
             <button
-              className="fixed right-10 md:right-50 px-4 py-2 mt-3 rounded-full text-white border border-white"
+              className="fixed right-10 md:right-50 px-4 py-2 mt-3 rounded-full text-white border border-white hover:border-black hover:text-black hover:cursor-pointer"
               onClick={() => setIsModalOpen(false)}
             >
               X
@@ -63,10 +63,11 @@ function Cta() {
                   className="border border-white rounded-sm mb-3"
                 />
                 <span className="border border-white rounded-sm mb-3 ">
-                  <select name="" id="" className="mr-0.5">
+                  <select name="" id="" className="mr-0.5 ">
                     <option value="+91">+91</option>
                   </select>
-                  <input type="number" placeholder="Mobile Number" />
+                  <input type="text" maxLength="10" pattern="[0-9]{10}" placeholder="Mobile Number"
+                  className="decoration-none  focus:outline-none" />
                 </span>
                 <textarea
                   name=""
@@ -74,7 +75,7 @@ function Cta() {
                   placeholder="Add a note"
                   className="border border-white rounded-sm mb-3 h-20"
                 ></textarea>
-                <button className="bg-blue-500 hover:bg-white hover:text-black text-white py-2 px-4 rounded-lg text-lg ">
+                <button className="bg-blue-500 hover:bg-white hover:text-black text-white py-2 px-4 rounded-lg text-lg hover:cursor-pointer">
                   Submit Details
                   <span className="ml-2">↗</span>
                 </button>
