@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import Card from "./Card";
+import Card from "./components/Card.jsx";
 import {
   p1,
   p2,
@@ -15,10 +15,11 @@ import {
   p12,
   p13,
   p14,
-} from "../assets/card-images/images.js";
-import Navbar from "./Navbar.jsx";
-import Cta from "./Cta.jsx";
-import Header from "./Header.jsx";
+} from "./assets/card-images/images.js";
+import Navbar from "./components/Navbar.jsx";
+import Cta from "./components/Cta.jsx";
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 
 const cardsData = [
   {
@@ -98,7 +99,7 @@ export default function Portfolio() {
           <p className="text-white text-2xl md:text-4xl font-bold">
             Other Recommended Brands
           </p>
-          <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-4 gap-4 mt-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
             <Card
               image1={p9}
               image2={p9}
@@ -178,6 +179,7 @@ export default function Portfolio() {
           </button>
         </div>
         <Cta />
+      <Footer />
       </div>
     </>
   );

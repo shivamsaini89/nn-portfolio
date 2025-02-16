@@ -2,9 +2,8 @@ import logo from "../assets/nn-logo.png";
 
 function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#0e0f0f] via-[#0b152b] to-[#220e0d] text-white p-8">
+    <footer className="text-white p-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-        {/* <div className="grid grid-cols-1"> */}
         <div className="flex flex-col gap-13">
           <div className="flex flex-row items-center text-left">
             <img
@@ -78,7 +77,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* <div className="grid grid-cols-1"> */}
         <div className="flex flex-col justify-end gap-">
           <div className="mt-0 max-w-lg text-left">
             <p className="text-gray-400">

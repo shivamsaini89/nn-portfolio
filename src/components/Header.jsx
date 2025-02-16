@@ -16,9 +16,9 @@ export default function Header() {
           experiences.
         </p>
         <div className="mt-6 relative z-10">
-          <button className="bg-blue-600 text-white py-2 px-6 rounded-lg text-lg transition duration-200 hover:bg-white hover:text-black hover:cursor-pointer">
-            <a href="#portfolio">
-            View our portfolio <span className="ml-2">↗</span>
+          <button className="bg-blue-600 text-white py-2 px-6 rounded-lg text-lg transition duration-200 hover:bg-white hover:text-black hover:cursor-pointer hover:animate-pulse ">
+            <a href="#portfolio" >
+            View our portfolio <span className="ml-2 ">↗</span>
             </a>
           </button>
         </div>
